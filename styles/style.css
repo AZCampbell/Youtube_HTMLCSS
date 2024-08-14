@@ -1,97 +1,49 @@
-* {
-  box-sizing: border-box;
-}
-.subscribe_button {
-  background-color: red;
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 2px;
-  cursor: pointer;
-  margin-right: 8px;
-  transition: opacity 0.15s;
-}
-.subscribe_button:hover {
-  opacity: 0.8;
-}
-.subscribe_button:active {
-  opacity: 0.5;
-}
-.join_button {
-  background-color: white;
-  border-color: rgb(6, 95, 212);
-  border-style: solid;
-  border-width: 1px;
-  color: rgb(6, 95, 212);
-  padding: 10px 16px;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: background-color 0.15s, color 0.15s;
-}
-
-.join_button:hover {
-  color: white;
-  background-color: rgb(41, 118, 211);
-}
-.join_button:active {
-  opacity: 0.7;
-}
-.tweet_button {
-  background-color: rgb(29, 155, 240);
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 18px;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-  margin-left: 8px;
-  transition: box-shadow 0.15s;
-}
-.tweet_button:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-}
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, Ariel;
   margin-top: 0;
   margin-bottom: 0;
 }
-.video-title {
-  font-weight: bold;
-  font-size: 18px;
-  width: 280px;
-  line-height: 24px;
-  margin-bottom: 5px;
+.thumbnail {
+  width: 300px;
 }
-.video-stats {
+.search-bar {
+  display: block;
+}
+.video-title {
+  margin-top: 0;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+.video-author,
+.video-stats {
+  font-size: 12px;
   color: rgb(96, 96, 96);
-  margin-bottom: 20px;
 }
 .video-author {
-  color: rgb(96, 96, 96);
-  font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
-.video-description {
-  font-size: 14px;
-  color: rgb(96, 96, 96);
-  width: 280px;
-  line-height: 22px;
+
+.video-preview {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
 }
-.apple-text {
-  margin-bottom: 50px;
-  font-size: 14px;
-  background-color: rgb(227, 65, 64);
-  color: white;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 18px;
+.channel-picture {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
 }
-.apple-text span {
-  cursor: pointer;
+.channel-picture img {
+  width: 40px;
+  border-radius: 50%;
 }
-.apple-text span:hover {
-  text-decoration: underline;
+.video-info {
+  display: inline-block;
+  width: 200px;
+}
+.thumbnail-row {
+  margin-bottom: 12px;
 }
