@@ -8,7 +8,7 @@ svg {
 }
 body {
   margin: 0;
-  padding-top: 80px;
+  padding-top: 57px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -16,6 +16,11 @@ p {
   font-family: Roboto, Ariel;
   margin-top: 0;
   margin-bottom: 0;
+}
+.Exercises-YouTube {
+  padding-top: 57px;
+  padding-left: 72px;
+  background-color: #f9f9f9;
 }
 .header {
   height: 57px;
@@ -141,11 +146,14 @@ p {
   width: 100%;
 }
 .video-title {
-  margin-top: 0;
+  margin-top: 12px;
   font-size: 14px;
   font-weight: 500;
+  width: 100%;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .video-author,
 .video-stats {
@@ -171,10 +179,63 @@ p {
   width: 40px;
   border-radius: 50%;
 }
-.video-info {
-  display: inline-block;
-  width: 200px;
-}
+
 .thumbnail-row {
   margin-bottom: 12px;
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  object-fit: contain;
+  object-position: bottom;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+  row-gap: 16px;
+  padding: 20px;
+}
+.video-card {
+  padding: 4px;
+  vertical-align: top;
+}
+.thumbnail-container {
+  position: relative;
+}
+.video-time {
+  position: absolute;
+  bottom: 7px;
+  right: 4px;
+  color: white;
+  background-color: #000;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+}
+.channel-info-pic img {
+  width: 36px;
+  border-radius: 36px;
+  margin-top: 12px;
+}
+.video-link {
+  text-decoration: none;
+  color: black;
+}
+.channel-link {
+  text-decoration: none;
+  color: inherit;
+}
+.channel-name {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #606060;
+}
+@media (min-width: 1125px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
